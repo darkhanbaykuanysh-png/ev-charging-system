@@ -96,7 +96,7 @@ CREATE TABLE ChargingSessions (
 CREATE TABLE Payments (
     payment_id INT IDENTITY(1,1) PRIMARY KEY,
     session_id INT NOT NULL,
-    user_id INT NOT NULL,
+    user1_id INT NOT NULL,
     amount DECIMAL(12,2) NOT NULL,
     method NVARCHAR(20) NOT NULL DEFAULT 'card',
     status NVARCHAR(20) NOT NULL DEFAULT 'pending',
