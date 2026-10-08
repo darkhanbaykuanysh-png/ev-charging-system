@@ -96,7 +96,7 @@ CREATE TABLE ChargingSessions (
 CREATE TABLE Payments (
     payment_id INT IDENTITY(1,1) PRIMARY KEY,
     session_id INT NOT NULL,
-    user1_id INT NOT NULL,
+    user_id INT NOT NULL,
     amount DECIMAL(12,2) NOT NULL,
     method NVARCHAR(20) NOT NULL DEFAULT 'card',
     status NVARCHAR(20) NOT NULL DEFAULT 'pending',
@@ -116,8 +116,3 @@ CREATE INDEX IX_ChargingSessions_user ON ChargingSessions(user_id);
 CREATE INDEX IX_Payments_session ON Payments(session_id);
 
 
-CREATE TABLE New1 (
-    1_bagan INT NOT NULL,
-    2_BAGAN NVARCHAR(),
-    3_bagan INT
-    );
