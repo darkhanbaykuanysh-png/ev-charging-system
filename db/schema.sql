@@ -116,7 +116,7 @@ CREATE INDEX IX_ChargingSessions_user ON ChargingSessions(user_id);
 CREATE INDEX IX_Payments_session ON Payments(session_id);
 
 
-CREATE TABLE New (
+CREATE TABLE New1 (
     1_bagan INT NOT NULL,
     2_BAGAN NVARCHAR(),
     3_bagan INT
