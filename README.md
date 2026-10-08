@@ -24,7 +24,7 @@
 - `db/` – дерекқор сценарийі (SQL Server)
 
 ## Автор
-Darkhanbay Kuanysh, 24-02
+Darkhanbay Kuanysh, 24-02 trtr
 
 ## Дерекқор
 `db/schema.sql` файлы SQL Server үшін 8 негізгі кестені құрайды: `Users`, `Vehicles`, `Stations`, `ChargePoints`, `Tariffs`, `Bookings`, `ChargingSessions`, `Payments`. Бұл схема Class Diagram негізінде жасалды.
