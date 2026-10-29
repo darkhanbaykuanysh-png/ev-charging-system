@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17" type="device">
+  <diagram id="ev-architecture" name="EV үш деңгейлі архитектура">
+    <mxGraphModel dx="1600" dy="1800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="&lt;b&gt;EV Charging System жүйесінің архитектурасы&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeColor=#77889A;strokeWidth=2;fillColor=#FFFFFF;fontFamily=Arial;fontSize=21;fontColor=#162638;spacing=15;fillColor=none;strokeColor=none;fontSize=30;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="10" width="1510" height="55" />
+        </mxCell>
+        <mxCell id="presentation" value="&lt;b&gt;1  ПРЕЗЕНТАЦИЯ ДЕҢГЕЙІ&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeColor=#77889A;strokeWidth=2;fillColor=#FFFFFF;fontFamily=Arial;fontSize=21;fontColor=#162638;spacing=15;fillColor=#F3F6FA;strokeColor=#B7C3D0;verticalAlign=top;align=left;spacingTop=18;fontSize=23;container=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="290" width="1000" height="270" />
+        </mxCell>
+        <mxCell id="business" value="&lt;b&gt;2  ҚОЛДАНБАЛЫ ЛОГИКА ДЕҢГЕЙІ&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeColor=#77889A;strokeWidth=2;fillColor=#FFFFFF;fontFamily=Arial;fontSize=21;fontColor=#162638;spacing=15;fillColor=#F3F6FA;strokeColor=#B7C3D0;verticalAlign=top;align=left;spacingTop=18;fontSize=23;container=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="710" width="1000" height="410" />
+        </mxCell>
+        <mxCell id="data" value="&lt;b&gt;3  ДЕРЕКТЕР ДЕҢГЕЙІ&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeColor=#77889A;strokeWidth=2;fillColor=#FFFFFF;fontFamily=Arial;fontSize=21;fontColor=#162638;spacing=15;fillColor=#F3F6FA;strokeColor=#B7C3D0;verticalAlign=top;align=left;spacingTop=18;fontSize=23;container=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="1280" width="1000" height="470" />
+        </mxCell>
+        <mxCell id="actors" value="&lt;b&gt;Пайдаланушылар&lt;/b&gt;&lt;br&gt;&lt;br&gt;Көлік иесі • Оператор • Әкімші" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeColor=#77889A;strokeWidth=2;fillColor=#FFFFFF;fontFamily=Arial;fontSize=21;fontColor=#162638;spacing=15;fillColor=#E8EDF3;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="160" y="105" width="760" height="140" />
+        </mxCell>
+        <mxCell id="ui" value="&lt;b&gt;Flutter Android интерфейсі&lt;/b&gt;&lt;br&gt;&lt;br&gt;Кіру және көлік профилі • Карта және іздеу&lt;br&gt;Брондау • Зарядтау барысы • Төлем және есептер" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeColor=#77889A;strokeWidth=2;fillColor=#FFFFFF;fontFamily=Arial;fontSize=21;fontColor=#162638;spacing=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="90" y="365" width="900" height="155" />
+        </mxCell>
+        <mxCell id="api" value="&lt;b&gt;Сервердегі API және бизнес логика&lt;/b&gt;&lt;br&gt;&lt;br&gt;Авторизация және рөлдерді тексеру&lt;br&gt;Станцияны іздеу және брондауды тексеру&lt;br&gt;Тариф пен төлемді өңдеу&lt;br&gt;Зарядтау сессиясы • Есептер • Хабарламалар" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeColor=#77889A;strokeWidth=2;fillColor=#FFFFFF;fontFamily=Arial;fontSize=21;fontColor=#162638;spacing=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="90" y="790" width="900" height="275" />
+        </mxCell>
+        <mxCell id="repository" value="&lt;b&gt;Деректерге қол жеткізу компоненті&lt;/b&gt;&lt;br&gt;&lt;br&gt;Параметрленген SQL • Транзакциялар" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeColor=#77889A;strokeWidth=2;fillColor=#FFFFFF;fontFamily=Arial;fontSize=21;fontColor=#162638;spacing=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="90" y="1360" width="900" height="130" />
+        </mxCell>
+        <mxCell id="database" value="&lt;b&gt;SQL Server  •  EVChargingDB&lt;/b&gt;&lt;br&gt;&lt;br&gt;users • vehicles • stations • charging_slots&lt;br&gt;tariffs • bookings • charging_sessions • payments" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeColor=#77889A;strokeWidth=2;fillColor=#FFFFFF;fontFamily=Arial;fontSize=21;fontColor=#162638;spacing=15;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="90" y="1600" width="900" height="110" />
+        </mxCell>
+        <mxCell id="external-title" value="&lt;b&gt;СЫРТҚЫ ЖҮЙЕЛЕР&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeColor=#77889A;strokeWidth=2;fillColor=#FFFFFF;fontFamily=Arial;fontSize=21;fontColor=#162638;spacing=15;fillColor=none;strokeColor=none;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1190" y="285" width="380" height="50" />
+        </mxCell>
+        <mxCell id="map" value="&lt;b&gt;Карта сервисі&lt;/b&gt;&lt;br&gt;&lt;br&gt;Карта мен орналасуды&lt;br&gt;көрсету" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeColor=#77889A;strokeWidth=2;fillColor=#FFFFFF;fontFamily=Arial;fontSize=21;fontColor=#162638;spacing=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1220" y="365" width="330" height="155" />
+        </mxCell>
+        <mxCell id="payment" value="&lt;b&gt;Төлем шлюзі&lt;/b&gt;&lt;br&gt;&lt;br&gt;Төлемді өңдеу&lt;br&gt;және растау" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeColor=#77889A;strokeWidth=2;fillColor=#FFFFFF;fontFamily=Arial;fontSize=21;fontColor=#162638;spacing=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1220" y="800" width="330" height="150" />
+        </mxCell>
+        <mxCell id="controller" value="&lt;b&gt;Станция контроллері&lt;/b&gt;&lt;br&gt;&lt;br&gt;Іске қосу және тоқтату&lt;br&gt;Энергия көрсеткіштері" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeColor=#77889A;strokeWidth=2;fillColor=#FFFFFF;fontFamily=Arial;fontSize=21;fontColor=#162638;spacing=15;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1220" y="1010" width="330" height="160" />
+        </mxCell>
+        <mxCell id="user-request" value="Әрекет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#254C70;fontColor=#254C70;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.29;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="actors" target="ui">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="user-response" value="Нәтиже" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#254C70;fontColor=#254C70;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.79;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="ui" target="actors">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="api-request" value="HTTPS сұранысы" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#254C70;fontColor=#254C70;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.28;exitY=1;exitDx=0;exitDy=0;entryX=0.28;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ui" target="api">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="api-response" value="JSON жауабы" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#254C70;fontColor=#254C70;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="api" target="ui">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="data-request" value="Оқу немесе өзгерту талабы" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#254C70;fontColor=#254C70;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.28;exitY=1;exitDx=0;exitDy=0;entryX=0.28;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="api" target="repository">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="data-response" value="Деректер немесе операция нәтижесі" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#254C70;fontColor=#254C70;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="repository" target="api">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="sql-request" value="SQL командасы" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#254C70;fontColor=#254C70;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.28;exitY=1;exitDx=0;exitDy=0;entryX=0.28;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="repository" target="database">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="sql-response" value="Жолдар немесе орындалу күйі" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#254C70;fontColor=#254C70;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="database" target="repository">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="map-request" value="Сұрау" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#254C70;fontColor=#254C70;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.28;exitDx=0;exitDy=0;entryX=0;entryY=0.28;entryDx=0;entryDy=0;" edge="1" parent="1" source="ui" target="map">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="map-response" value="Карта" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#254C70;fontColor=#254C70;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="map" target="ui">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="pay-request" value="Төлем" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#254C70;fontColor=#254C70;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.2;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" edge="1" parent="1" source="api" target="payment">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="pay-response" value="Мәртебе" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#254C70;fontColor=#254C70;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.45;entryDx=0;entryDy=0;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="payment" target="api">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="controller-command" value="Команда" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#254C70;fontColor=#254C70;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.7;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="api" target="controller">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="controller-data" value="Көрсеткіштер" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#254C70;fontColor=#254C70;fontFamily=Arial;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.92;entryDx=0;entryDy=0;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="controller" target="api">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1110" y="1130" />
+              <mxPoint x="1110" y="1043" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend" value="&lt;b&gt;Байланыстар&lt;/b&gt;&lt;br&gt;&lt;br&gt;Тұтас жебе — сұраныс немесе команда   •   Үзік жебе — жауап немесе деректер" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeColor=#77889A;strokeWidth=2;fillColor=#FFFFFF;fontFamily=Arial;fontSize=21;fontColor=#162638;spacing=15;fillColor=none;strokeColor=none;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="1775" width="1510" height="75" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
